@@ -64,7 +64,7 @@ public class AlphaRobot extends AbstractRobot{
 	//-------MOVING------//
 	public boolean moveRight() {
 		int newX = x+1;
-		if(checkX(newX)) {
+		if(checkCoords(newX)) {
 			setX(newX);
 			return true;
 		}
@@ -72,7 +72,7 @@ public class AlphaRobot extends AbstractRobot{
 	}
     public boolean moveLeft() {
     	int newX = x-1;;
-    	if(checkX(newX)) {
+    	if(checkCoords(newX)) {
 		setX(newX);
 		return true;
 	}
@@ -80,7 +80,7 @@ public class AlphaRobot extends AbstractRobot{
     }
     public boolean moveDown() {
     	int newY = y+1;
-    	if(checkX(newY)) {
+    	if(checkCoords(newY)) {
 		setY(newY);
 		return true;
 	}
@@ -89,19 +89,15 @@ public class AlphaRobot extends AbstractRobot{
     
     public boolean moveUp() {
     	int newY = y-1;
-    	if(checkX(newY)) {
+    	if(checkCoords(newY)) {
 		setY(newY);
 		return true;
 	}
 	else return false; 
     }
     
-    public boolean checkX(int newX) {
-    	return (newX >= 0 && newX <=100);
-    }
-    
-    public boolean checkY(int newY) {
-    	return (newY >= 0 && newY <=100);   		
+   private static boolean checkCoords(int coordinate) {
+    	return (coordinate >= 0 && coordinate <=100);
     }
 	
 }
