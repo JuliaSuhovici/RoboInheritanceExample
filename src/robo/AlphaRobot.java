@@ -73,27 +73,27 @@ public class AlphaRobot extends AbstractRobot{
     public boolean moveLeft() {
     	int newX = x-1;;
     	if(checkX(newX)) {
-			setX(newX);
-			return true;
-		}
-		else return false;
+		setX(newX);
+		return true;
+	}
+	else return false;
     }
     public boolean moveDown() {
     	int newY = y+1;
     	if(checkX(newY)) {
-			setY(newY);
-			return true;
-		}
-		else return false; 
+		setY(newY);
+		return true;
+	}
+	else return false; 
     }
     
     public boolean moveUp() {
     	int newY = y-1;
     	if(checkX(newY)) {
-			setY(newY);
-			return true;
-		}
-		else return false; 
+		setY(newY);
+		return true;
+	}
+	else return false; 
     }
     
     public boolean checkX(int newX) {
