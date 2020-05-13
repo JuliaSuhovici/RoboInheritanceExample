@@ -96,7 +96,7 @@ public class AlphaRobot extends AbstractRobot{
 	else return false; 
     }
     
-   private static boolean checkCoords(int coordinate) {
+   protected static boolean checkCoords(int coordinate) {
     	return (coordinate >= 0 && coordinate <=100);
     }
 	
