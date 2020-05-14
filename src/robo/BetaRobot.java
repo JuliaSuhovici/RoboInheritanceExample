@@ -36,43 +36,43 @@ public class BetaRobot extends AlphaRobot{
 	}
 	
 	@Override
-    public boolean moveLeft() {
-    	int newX = getX()-1;;
-    	if(checkCoords(newX) && charge >5 ) {
+    	public boolean moveLeft() {
+    		int newX = getX()-1;;
+    		if(checkCoords(newX) && charge >5 ) {
 			setX(newX);
 			checkCharge();
 			return true;
 		}
 		else return false;
-    }
+    	}
 	
 	@Override
-    public boolean moveDown() {
-    	int newY = getY()+1;
-    	if(checkCoords(newY) && charge >5) {
+    	public boolean moveDown() {
+    		int newY = getY()+1;
+    		if(checkCoords(newY) && charge >5) {
 			setY(newY);
 			checkCharge();
 			return true;
 		}
 		else return false; 
-    }
+    	}
 	
 	@Override
-    public boolean moveUp() {
-    	int newY = getY()-1;
-    	if(checkCoords(newY) && charge >5) {
+    	public boolean moveUp() {
+    		int newY = getY()-1;
+    		if(checkCoords(newY) && charge >5) {
 			setY(newY);
 			checkCharge();
 			return true;
 		}
 		else return false; 
-    }
+    	}
 
-    protected void checkCharge(){
-    	walk++;
-    	if(walk == 2 ) {
-    		setCharge(--charge);
-    		walk = 0;
-    	}	
+    	protected void checkCharge(){
+    		walk++;
+    		if(walk == 2 ) {
+    			setCharge(--charge);
+    			walk = 0;
+    		}	
     }
 }
