@@ -5,8 +5,8 @@ public class BetaRobot extends AlphaRobot{
 	private byte walk;
 
 	//-------CONSTRUCTORS------//
-	public BetaRobot() {}
-	public BetaRobot(String name, String model) {
+	protected BetaRobot() {}
+	protected BetaRobot(String name, String model) {
 		super(name, model);
 	}
 
