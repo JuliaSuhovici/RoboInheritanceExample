@@ -8,9 +8,9 @@ public class AlphaRobot extends AbstractRobot{
 	
 	//-------CONSTRUCTORS------//
 	
-	public AlphaRobot() {}
+	protected AlphaRobot() {}
 	
-	public AlphaRobot(String name, String model) {
+	protected AlphaRobot(String name, String model) {
 		this.name = name;
 		this.model = model;
 	}
